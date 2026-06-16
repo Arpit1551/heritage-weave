@@ -813,6 +813,7 @@ function Home() {
 
       {/* FOOTER */}
       <footer
+        role="contentinfo"
         className="text-cream"
         style={{ backgroundColor: "var(--charcoal)" }}
       >
