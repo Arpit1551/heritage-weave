@@ -24,25 +24,266 @@ export const Route = createFileRoute("/")({
     meta: [
       {
         title:
-          "HH Textiles | Premium Textile Manufacturer — Scarves, Bags & Dresses | Noida, India",
+          "HH Textiles | Textile Manufacturer in India – Scarves, Bags, Dresses & More | Noida",
       },
       {
         name: "description",
         content:
-          "HH Textiles is a premium textile manufacturer based in Noida with 50+ years of heritage. We manufacture custom scarves, bags, dresses, and accessories using block printing, screen printing & digital printing. AZO-free dyes. Flexible MOQ.",
+          "HH Textiles is a premium textile manufacturer in Noida, India with 50+ years of artisan heritage. We manufacture custom scarves, quilted bags, dresses and fashion accessories using block printing, screen printing and digital printing. AZO-free dyes. Flexible MOQ.",
       },
       {
+        name: "keywords",
+        content:
+          "textile manufacturer India, scarf manufacturer Noida, quilted bag manufacturer India, block printing manufacturer India, screen printing textile India, digital printing fabric India, custom dress manufacturer, fashion accessories manufacturer India, wholesale scarves India, AZO-free textile manufacturer, organic cotton bags India, sustainable textile manufacturer Noida",
+      },
+      { name: "robots", content: "index, follow" },
+      { name: "author", content: "HH Textiles" },
+      { property: "og:type", content: "website" },
+      {
         property: "og:title",
-        content: "HH Textiles | Premium Textile Manufacturer — Noida, India",
+        content:
+          "HH Textiles | Premium Textile Manufacturer – Scarves, Bags & Dresses | Noida, India",
       },
       {
         property: "og:description",
         content:
-          "50+ years of artisan heritage. Custom scarves, bags, dresses and accessories.",
+          "50+ years of artisan craftsmanship. Custom scarves, bags, dresses and accessories manufactured in Noida, India. Block printing, screen printing, digital printing. AZO-free dyes. Flexible MOQ. Trusted by international brands.",
       },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: "https://www.hariharatextiles.com/" },
+      { property: "og:site_name", content: "HH Textiles" },
+      { property: "og:locale", content: "en_IN" },
+      { name: "twitter:card", content: "summary_large_image" },
+      {
+        name: "twitter:title",
+        content:
+          "HH Textiles | Textile Manufacturer India – Scarves, Bags & Dresses",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Premium textile manufacturer in Noida with 50+ years heritage. Custom scarves, bags, dresses. Block, screen & digital printing. AZO-free dyes. Flexible MOQ.",
+      },
+      { name: "twitter:site", content: "@hhtextiles" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: "https://www.hariharatextiles.com/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "HH Textiles",
+          alternateName: "Hariharatextiles",
+          description:
+            "HH Textiles is a premium textile manufacturer based in Noida, India with over 50 years of artisan heritage. We manufacture custom scarves, quilted bags, dresses, pouches and fashion accessories using block printing, screen printing and digital printing with AZO-free dyes.",
+          url: "https://www.hariharatextiles.com",
+          telephone: ["+91-9506815940", "+91-9773828007"],
+          email: "info@hariharatextiles.com",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "E-40, 2nd Floor, Sector 8",
+            addressLocality: "Noida",
+            addressRegion: "Uttar Pradesh",
+            postalCode: "201301",
+            addressCountry: "IN",
+          },
+          geo: { "@type": "GeoCoordinates", latitude: 28.5896, longitude: 77.3261 },
+          openingHoursSpecification: {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            opens: "09:00",
+            closes: "18:00",
+          },
+          sameAs: ["https://www.hariharatextiles.com"],
+          priceRange: "$$",
+          currenciesAccepted: "INR, USD, EUR",
+          paymentAccepted: "Bank Transfer, Wire Transfer",
+          areaServed: {
+            "@type": "Country",
+            name: ["India", "France", "United States", "United Kingdom", "Germany", "Australia"],
+          },
+          knowsAbout: [
+            "Block Printing",
+            "Screen Printing",
+            "Digital Printing",
+            "Scarf Manufacturing",
+            "Bag Manufacturing",
+            "Dress Manufacturing",
+            "AZO-free Dyes",
+            "Organic Cotton Textiles",
+            "Sustainable Fashion Manufacturing",
+          ],
+          foundingDate: "1974",
+          slogan: "Quality · Craft · Trust",
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "HH Textiles",
+          url: "https://www.hariharatextiles.com",
+          logo: "https://www.hariharatextiles.com/logo.png",
+          contactPoint: [
+            {
+              "@type": "ContactPoint",
+              telephone: "+91-9506815940",
+              contactType: "sales",
+              availableLanguage: ["English", "Hindi"],
+              contactOption: "TollFree",
+              areaServed: "Worldwide",
+            },
+            {
+              "@type": "ContactPoint",
+              telephone: "+91-9773828007",
+              contactType: "customer support",
+              availableLanguage: ["English", "Hindi"],
+            },
+          ],
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "E-40, 2nd Floor, Sector 8",
+            addressLocality: "Noida",
+            postalCode: "201301",
+            addressCountry: "IN",
+          },
+          description:
+            "Premium textile manufacturer in Noida, India specialising in scarves, quilted bags, dresses and fashion accessories with 50+ years of artisan heritage.",
+          foundingDate: "1974",
+          numberOfEmployees: { "@type": "QuantitativeValue", minValue: 50, maxValue: 200 },
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: "HH Textiles Product Catalog",
+          description: "Custom textile products manufactured by HH Textiles, Noida",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              item: {
+                "@type": "Product",
+                name: "Custom Printed Scarves",
+                description:
+                  "Handcrafted scarves in silk, cotton, modal, wool, linen, viscose and sustainable fabrics. Available with block printing, screen printing, digital printing, embroidery, foil work and handcrafted detailing. Custom sizes, Pantone color matching, fringes, tassels and luxury packaging available.",
+                brand: { "@type": "Brand", name: "HH Textiles" },
+                manufacturer: { "@type": "Organization", name: "HH Textiles" },
+                material: ["Silk", "Cotton", "Modal", "Wool", "Linen", "Viscose"],
+                countryOfOrigin: "IN",
+                category: "Fashion Accessories",
+              },
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              item: {
+                "@type": "Product",
+                name: "Cotton Quilted Bags",
+                description:
+                  "Premium organic cotton quilted bags, pouches, tote bags and travel bags. Fully customisable in any size, shape, print and design. Block printed, screen printed and digitally printed options available.",
+                brand: { "@type": "Brand", name: "HH Textiles" },
+                manufacturer: { "@type": "Organization", name: "HH Textiles" },
+                material: ["Organic Cotton", "Cotton"],
+                countryOfOrigin: "IN",
+                category: "Bags & Accessories",
+              },
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              item: {
+                "@type": "Product",
+                name: "Custom Printed Dresses",
+                description:
+                  "Artisan-crafted dresses and garments with custom prints, embroidery and exceptional fabric quality. Developed from concept to production with full brand customisation.",
+                brand: { "@type": "Brand", name: "HH Textiles" },
+                manufacturer: { "@type": "Organization", name: "HH Textiles" },
+                material: ["Cotton", "Linen", "Viscose", "Modal"],
+                countryOfOrigin: "IN",
+                category: "Apparel",
+              },
+            },
+          ],
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "What products does HH Textiles manufacture?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "HH Textiles manufactures custom scarves, quilted bags, pouches, tote bags, dresses, and fashion accessories. All products are fully customisable in size, print, fabric, and finish.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What printing techniques does HH Textiles offer?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "HH Textiles offers block printing, screen printing, digital printing, embroidery, foil work, and handcrafted detailing based on your design and aesthetic preferences.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What fabrics does HH Textiles work with?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "HH Textiles works with thousands of fabrics including silk, cotton, modal, wool, linen, viscose, organic cotton, and sustainable fabric options.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does HH Textiles support small or emerging brands?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. HH Textiles offers flexible MOQ and development support designed to support both emerging brands and large-scale established collections.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is HH Textiles sustainable?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. HH Textiles uses AZO-free dyes, works with organic cotton fabrics, practises responsible sourcing, and has long-standing artisan community collaborations. Sustainability has been central to our work long before it became an industry trend.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Where is HH Textiles located?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "HH Textiles is located at E-40, 2nd Floor, Sector 8, Noida 201301, India. We serve international clients across Europe, the Americas, and beyond.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How can I contact HH Textiles?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "You can reach HH Textiles via WhatsApp at +91-9506815940 or +91-9773828007, or visit our website at www.hariharatextiles.com.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does HH Textiles offer Pantone color matching?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. HH Textiles provides Pantone color matching with precise color development and sampling support to ensure accurate brand consistency across all products.",
+              },
+            },
+          ],
+        }),
+      },
+    ],
   }),
   component: Home,
 });
@@ -172,6 +413,7 @@ function Home() {
       <main>
         {/* HERO */}
         <section
+          id="hero"
           className="relative min-h-screen flex items-center texture-linen overflow-hidden"
           style={{
             background:
@@ -399,7 +641,7 @@ function Home() {
 
         {/* WHY US */}
         <section
-          id="why"
+          id="why-us"
           className="py-24 md:py-36"
           style={{ backgroundColor: "var(--cream)" }}
         >
@@ -571,6 +813,7 @@ function Home() {
 
       {/* FOOTER */}
       <footer
+        role="contentinfo"
         className="text-cream"
         style={{ backgroundColor: "var(--charcoal)" }}
       >
@@ -590,13 +833,19 @@ function Home() {
           <div>
             <h4 className="font-display text-lg text-[color:var(--gold)]">Quick Links</h4>
             <ul className="mt-5 space-y-3 text-sm text-cream/75">
-              {["About", "Products", "Capabilities", "Why Us", "Contact"].map((l) => (
-                <li key={l}>
+              {[
+                { id: "about", label: "Our Story" },
+                { id: "products", label: "Products" },
+                { id: "capabilities", label: "Printing Capabilities" },
+                { id: "why-us", label: "Why HH Textiles" },
+                { id: "contact", label: "Get a Quote" },
+              ].map((l) => (
+                <li key={l.id}>
                   <a
-                    href={`#${l.toLowerCase().replace(" ", "")}`}
+                    href={`#${l.id}`}
                     className="hover:text-[color:var(--gold)] transition-colors"
                   >
-                    {l}
+                    {l.label}
                   </a>
                 </li>
               ))}
@@ -627,12 +876,20 @@ function Home() {
           </div>
         </div>
         <div className="border-t border-cream/10">
-          <div className="max-w-7xl mx-auto px-6 lg:px-10 py-6 text-xs text-cream/55 flex flex-col md:flex-row gap-2 md:justify-between">
-            <span>
-              © 2025 HH Textiles. All rights reserved. | Manufacturer of Scarves, Bags,
-              Dresses &amp; More | Noida, India
-            </span>
-            <span>Made with craft.</span>
+          <div className="max-w-7xl mx-auto px-6 lg:px-10 py-6 text-xs text-cream/55 flex flex-col gap-3">
+            <p className="leading-relaxed">
+              HH Textiles — Textile Manufacturer in Noida, India. Specialists in custom
+              scarves, quilted bags, printed dresses and fashion accessories. Block
+              printing, screen printing and digital printing with AZO-free dyes and
+              organic cotton fabrics.
+            </p>
+            <div className="flex flex-col md:flex-row gap-2 md:justify-between">
+              <span>
+                © 2025 HH Textiles, E-40, 2nd Floor, Sector 8, Noida 201301, India. All
+                rights reserved.
+              </span>
+              <span>Made with craft.</span>
+            </div>
           </div>
         </div>
       </footer>
