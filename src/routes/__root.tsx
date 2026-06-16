@@ -76,47 +76,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   head: () => ({
     meta: [
       { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "HH Textiles | Premium Textile Manufacturer — Scarves, Bags & Dresses | Noida, India" },
-      { name: "description", content: "HH Textiles is a premium textile manufacturer based in Noida with 50+ years of heritage. We manufacture custom scarves, bags, dresses, and accessories using block printing, screen printing & digital printing. AZO-free dyes. Flexible MOQ." },
-      { name: "keywords", content: "textile manufacturer India, scarf manufacturer Noida, bag manufacturer India, block printing manufacturer, custom textile, sustainable textile manufacturer, scarves wholesale India" },
-      { name: "author", content: "HH Textiles" },
-      { property: "og:title", content: "HH Textiles | Premium Textile Manufacturer — Noida, India" },
-      { property: "og:description", content: "50+ years of artisan heritage. Custom scarves, bags, dresses and accessories with block, screen and digital printing." },
-      { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "HH Textiles" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "HH Textiles | Premium Textile Manufacturer" },
-      { name: "twitter:description", content: "Heritage-led textile manufacturing from Noida, India." },
+      { name: "viewport", content: "width=device-width, initial-scale=1.0" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" },
-    ],
-    scripts: [
-      {
-        type: "application/ld+json",
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          name: "HH Textiles",
-          description: "Premium textile manufacturer specialising in custom scarves, bags, dresses and accessories with block, screen and digital printing.",
-          url: "https://www.hariharatextiles.com",
-          telephone: "+91-9506815940",
-          address: {
-            "@type": "PostalAddress",
-            streetAddress: "E-40, 2nd Floor, Sector 8",
-            addressLocality: "Noida",
-            postalCode: "201301",
-            addressCountry: "IN",
-          },
-          founder: "HH Textiles Family",
-          foundingDate: "1974",
-          areaServed: ["IN", "FR", "EU", "US"],
-        }),
-      },
     ],
   }),
 
