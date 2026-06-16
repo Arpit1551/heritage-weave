@@ -52,7 +52,7 @@ export function Nav() {
           HH<span className="text-accent">·</span>TEXTILES
         </button>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
           {links.map((l) => (
             <button
               key={l.href}
