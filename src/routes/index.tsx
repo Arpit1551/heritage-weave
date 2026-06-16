@@ -641,7 +641,7 @@ function Home() {
 
         {/* WHY US */}
         <section
-          id="why"
+          id="why-us"
           className="py-24 md:py-36"
           style={{ backgroundColor: "var(--cream)" }}
         >
