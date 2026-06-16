@@ -833,13 +833,19 @@ function Home() {
           <div>
             <h4 className="font-display text-lg text-[color:var(--gold)]">Quick Links</h4>
             <ul className="mt-5 space-y-3 text-sm text-cream/75">
-              {["About", "Products", "Capabilities", "Why Us", "Contact"].map((l) => (
-                <li key={l}>
+              {[
+                { id: "about", label: "Our Story" },
+                { id: "products", label: "Products" },
+                { id: "capabilities", label: "Printing Capabilities" },
+                { id: "why-us", label: "Why HH Textiles" },
+                { id: "contact", label: "Get a Quote" },
+              ].map((l) => (
+                <li key={l.id}>
                   <a
-                    href={`#${l.toLowerCase().replace(" ", "")}`}
+                    href={`#${l.id}`}
                     className="hover:text-[color:var(--gold)] transition-colors"
                   >
-                    {l}
+                    {l.label}
                   </a>
                 </li>
               ))}
