@@ -876,12 +876,20 @@ function Home() {
           </div>
         </div>
         <div className="border-t border-cream/10">
-          <div className="max-w-7xl mx-auto px-6 lg:px-10 py-6 text-xs text-cream/55 flex flex-col md:flex-row gap-2 md:justify-between">
-            <span>
-              © 2025 HH Textiles. All rights reserved. | Manufacturer of Scarves, Bags,
-              Dresses &amp; More | Noida, India
-            </span>
-            <span>Made with craft.</span>
+          <div className="max-w-7xl mx-auto px-6 lg:px-10 py-6 text-xs text-cream/55 flex flex-col gap-3">
+            <p className="leading-relaxed">
+              HH Textiles — Textile Manufacturer in Noida, India. Specialists in custom
+              scarves, quilted bags, printed dresses and fashion accessories. Block
+              printing, screen printing and digital printing with AZO-free dyes and
+              organic cotton fabrics.
+            </p>
+            <div className="flex flex-col md:flex-row gap-2 md:justify-between">
+              <span>
+                © 2025 HH Textiles, E-40, 2nd Floor, Sector 8, Noida 201301, India. All
+                rights reserved.
+              </span>
+              <span>Made with craft.</span>
+            </div>
           </div>
         </div>
       </footer>
