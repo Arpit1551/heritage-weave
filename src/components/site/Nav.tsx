@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { href: "#about", label: "About" },
+  { href: "#about", label: "Our Story" },
   { href: "#products", label: "Products" },
-  { href: "#capabilities", label: "Capabilities" },
-  { href: "#why", label: "Why Us" },
-  { href: "#contact", label: "Contact" },
+  { href: "#capabilities", label: "Printing Capabilities" },
+  { href: "#why-us", label: "Why HH Textiles" },
+  { href: "#contact", label: "Get a Quote" },
 ];
 
 export function Nav() {
