@@ -413,6 +413,7 @@ function Home() {
       <main>
         {/* HERO */}
         <section
+          id="hero"
           className="relative min-h-screen flex items-center texture-linen overflow-hidden"
           style={{
             background:
