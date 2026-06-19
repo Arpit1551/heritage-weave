@@ -43,7 +43,12 @@ export function ContactForm() {
       "Message:",
       data.message,
     ].join("\n");
-    window.location.assign(`https://wa.me/919773828007?text=${encodeURIComponent(message)}`);
+    const whatsappUrl = `https://wa.me/919773828007?text=${encodeURIComponent(message)}`;
+    if (window.top) {
+      window.top.location.href = whatsappUrl;
+    } else {
+      window.location.href = whatsappUrl;
+    }
     e.currentTarget.reset();
   };
 
