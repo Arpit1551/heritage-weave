@@ -18,6 +18,15 @@ import {
 import { Nav } from "@/components/site/Nav";
 import { Reveal } from "@/components/site/Reveal";
 import { ContactForm } from "@/components/site/ContactForm";
+import product1 from "@/assets/product-1.png.asset.json";
+import product2 from "@/assets/product-2.png.asset.json";
+import product3 from "@/assets/product-3.png.asset.json";
+import product4 from "@/assets/product-4.png.asset.json";
+import product5 from "@/assets/product-5.png.asset.json";
+import product6 from "@/assets/product-6.png.asset.json";
+import product7 from "@/assets/product-7.png.asset.json";
+
+const WHATSAPP_URL = "https://wa.me/919773828007";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -292,26 +301,32 @@ const products = [
   {
     name: "Cotton Quilted Bags",
     desc: "Handcrafted quilted bags in custom sizes, prints, and designs — made with premium organic cotton.",
+    image: product4.url,
   },
   {
     name: "Scarves",
     desc: "Custom scarves in silk, cotton, modal, wool, linen, viscose, and sustainable fabrics — available in all sizes and finishes.",
+    image: product7.url,
   },
   {
     name: "Dresses",
     desc: "Artisan-crafted dresses and garments with intricate prints and exceptional fabric quality.",
+    image: product5.url,
   },
   {
     name: "Pouches & Cosmetic Bags",
     desc: "Block-printed and screen-printed pouches and travel bags in any size or design.",
+    image: product3.url,
   },
   {
     name: "Tote Bags",
     desc: "Sustainable, stylish cotton tote bags with full-custom print options.",
+    image: product1.url,
   },
   {
     name: "Fashion Accessories",
     desc: "Complete textile accessories — from sarongs to fashion pieces — built to your brand vision.",
+    image: product6.url,
   },
 ];
 
@@ -458,7 +473,9 @@ function Home() {
                   Explore Our Products <ArrowRight size={18} />
                 </a>
                 <a
-                  href="#contact"
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noreferrer"
                   className="border border-cream/40 text-cream px-7 py-4 rounded-full font-medium hover:bg-cream/10 transition-colors"
                 >
                   Contact Us
@@ -551,26 +568,19 @@ function Home() {
               {products.map((p, i) => (
                 <Reveal key={p.name} delay={(i % 3) * 100}>
                   <article className="group border border-border rounded-2xl overflow-hidden bg-card hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
-                    <div
-                      className="aspect-[4/5] relative overflow-hidden"
-                      role="img"
-                      aria-label={`${p.name} placeholder`}
-                    >
-                      <div
-                        className="absolute inset-0 transition-transform duration-[1200ms] group-hover:scale-110 texture-linen"
-                        style={{
-                          background: `linear-gradient(${135 + i * 25}deg, var(--olive-deep), var(--olive) 60%, var(--olive-light))`,
-                        }}
+                    <div className="aspect-[4/5] relative overflow-hidden bg-[color:var(--cream)]">
+                      <img
+                        src={p.image}
+                        alt={`${p.name} by HH Textiles — block printed, custom manufactured in Noida, India`}
+                        loading="lazy"
+                        decoding="async"
+                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-105"
                       />
                       <div
                         aria-hidden
-                        className="absolute inset-0 opacity-30 mix-blend-overlay"
-                        style={{
-                          background:
-                            "radial-gradient(circle at 30% 30%, var(--gold), transparent 55%)",
-                        }}
+                        className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/40 to-transparent"
                       />
-                      <div className="absolute bottom-5 left-5 text-cream/85 font-display text-sm tracking-[0.3em] uppercase">
+                      <div className="absolute bottom-5 left-5 text-cream font-display text-sm tracking-[0.3em] uppercase">
                         {String(i + 1).padStart(2, "0")} · {p.name.split(" ")[0]}
                       </div>
                     </div>
@@ -580,7 +590,9 @@ function Home() {
                         {p.desc}
                       </p>
                       <a
-                        href="#contact"
+                        href={WHATSAPP_URL}
+                        target="_blank"
+                        rel="noreferrer"
                         className="mt-5 inline-flex items-center gap-1.5 text-accent text-sm font-medium group/link"
                       >
                         Learn More

@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
+const WHATSAPP_URL = "https://wa.me/919773828007";
+
 const links = [
   { href: "#about", label: "Our Story" },
   { href: "#products", label: "Products" },
   { href: "#capabilities", label: "Printing Capabilities" },
   { href: "#why-us", label: "Why HH Textiles" },
-  { href: "#contact", label: "Get a Quote" },
 ];
 
 export function Nav() {
@@ -69,12 +70,14 @@ export function Nav() {
               />
             </button>
           ))}
-          <button
-            onClick={() => go("#contact")}
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noreferrer"
             className="bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[color:var(--olive-deep)] transition-colors"
           >
             Get a Quote
-          </button>
+          </a>
         </nav>
 
         <button
@@ -98,12 +101,14 @@ export function Nav() {
                 {l.label}
               </button>
             ))}
-            <button
-              onClick={() => go("#contact")}
-              className="bg-primary text-primary-foreground px-5 py-3 rounded-full text-sm font-medium"
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="bg-primary text-primary-foreground px-5 py-3 rounded-full text-sm font-medium text-center"
             >
               Get a Quote
-            </button>
+            </a>
           </div>
         </div>
       )}
