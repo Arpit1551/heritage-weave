@@ -473,7 +473,9 @@ function Home() {
                   Explore Our Products <ArrowRight size={18} />
                 </a>
                 <a
-                  href="#contact"
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noreferrer"
                   className="border border-cream/40 text-cream px-7 py-4 rounded-full font-medium hover:bg-cream/10 transition-colors"
                 >
                   Contact Us
