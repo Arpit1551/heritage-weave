@@ -32,8 +32,23 @@ export function ContactForm() {
       return;
     }
     setErrors({});
-    const text = `Hello HH Textiles,%0A%0AName: ${encodeURIComponent(data.name)}%0AEmail: ${encodeURIComponent(data.email)}%0ACompany: ${encodeURIComponent(data.company || "N/A")}%0AProduct Interest: ${encodeURIComponent(data.interest)}%0A%0AMessage:%0A${encodeURIComponent(data.message)}`;
-    window.location.href = `https://wa.me/919773828007?text=${text}`;
+    const message = [
+      "Hello HH Textiles,",
+      "",
+      `Name: ${data.name}`,
+      `Email: ${data.email}`,
+      `Company: ${data.company || "N/A"}`,
+      `Product Interest: ${data.interest}`,
+      "",
+      "Message:",
+      data.message,
+    ].join("\n");
+    const whatsappUrl = `https://wa.me/919773828007?text=${encodeURIComponent(message)}`;
+    if (window.top) {
+      window.top.location.href = whatsappUrl;
+    } else {
+      window.location.href = whatsappUrl;
+    }
     e.currentTarget.reset();
   };
 

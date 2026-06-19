@@ -26,8 +26,6 @@ import product5 from "@/assets/product-5.png.asset.json";
 import product6 from "@/assets/product-6.png.asset.json";
 import product7 from "@/assets/product-7.png.asset.json";
 
-const WHATSAPP_URL = "https://wa.me/919773828007";
-
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -473,9 +471,7 @@ function Home() {
                   Explore Our Products <ArrowRight size={18} />
                 </a>
                 <a
-                  href={WHATSAPP_URL}
-                  target="_blank"
-                  rel="noreferrer"
+                  href="#contact"
                   className="border border-cream/40 text-cream px-7 py-4 rounded-full font-medium hover:bg-cream/10 transition-colors"
                 >
                   Contact Us
@@ -590,9 +586,7 @@ function Home() {
                         {p.desc}
                       </p>
                       <a
-                        href={WHATSAPP_URL}
-                        target="_blank"
-                        rel="noreferrer"
+                        href="#contact"
                         className="mt-5 inline-flex items-center gap-1.5 text-accent text-sm font-medium group/link"
                       >
                         Learn More
