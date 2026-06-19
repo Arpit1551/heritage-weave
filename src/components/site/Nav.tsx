@@ -70,12 +70,14 @@ export function Nav() {
               />
             </button>
           ))}
-          <button
-            onClick={() => go("#contact")}
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noreferrer"
             className="bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[color:var(--olive-deep)] transition-colors"
           >
             Get a Quote
-          </button>
+          </a>
         </nav>
 
         <button
