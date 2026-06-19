@@ -26,6 +26,14 @@ import product5 from "@/assets/product-5.png.asset.json";
 import product6 from "@/assets/product-6.png.asset.json";
 import product7 from "@/assets/product-7.png.asset.json";
 
+import product4_img from "@/assets/product-4.png";
+import product1_img from "@/assets/product-1.png";
+import product3_img from "@/assets/product-3.png";
+import product6_img from "@/assets/product-6.png";
+import product7_img from "@/assets/product-7.png";
+import product5_img from "@/assets/product-5.png";
+
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -299,32 +307,32 @@ const products = [
   {
     name: "Cotton Quilted Bags",
     desc: "Handcrafted quilted bags in custom sizes, prints, and designs — made with premium organic cotton.",
-    image: product4.url,
+    image: product4_img,
   },
   {
     name: "Scarves",
     desc: "Custom scarves in silk, cotton, modal, wool, linen, viscose, and sustainable fabrics — available in all sizes and finishes.",
-    image: product7.url,
+    image: product7_img,
   },
   {
     name: "Dresses",
     desc: "Artisan-crafted dresses and garments with intricate prints and exceptional fabric quality.",
-    image: product5.url,
+    image: product5_img,
   },
   {
     name: "Pouches & Cosmetic Bags",
     desc: "Block-printed and screen-printed pouches and travel bags in any size or design.",
-    image: product3.url,
+    image: product3_img,
   },
   {
     name: "Tote Bags",
     desc: "Sustainable, stylish cotton tote bags with full-custom print options.",
-    image: product1.url,
+    image: product1_img,
   },
   {
     name: "Fashion Accessories",
     desc: "Complete textile accessories — from sarongs to fashion pieces — built to your brand vision.",
-    image: product6.url,
+    image: product6_img,
   },
 ];
 
