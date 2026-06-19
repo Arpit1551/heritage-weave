@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
+const WHATSAPP_URL = "https://wa.me/919773828007";
+
 const links = [
   { href: "#about", label: "Our Story" },
   { href: "#products", label: "Products" },
   { href: "#capabilities", label: "Printing Capabilities" },
   { href: "#why-us", label: "Why HH Textiles" },
-  { href: "#contact", label: "Get a Quote" },
 ];
 
 export function Nav() {
