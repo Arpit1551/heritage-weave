@@ -101,12 +101,14 @@ export function Nav() {
                 {l.label}
               </button>
             ))}
-            <button
-              onClick={() => go("#contact")}
-              className="bg-primary text-primary-foreground px-5 py-3 rounded-full text-sm font-medium"
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="bg-primary text-primary-foreground px-5 py-3 rounded-full text-sm font-medium text-center"
             >
               Get a Quote
-            </button>
+            </a>
           </div>
         </div>
       )}
