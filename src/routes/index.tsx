@@ -566,26 +566,19 @@ function Home() {
               {products.map((p, i) => (
                 <Reveal key={p.name} delay={(i % 3) * 100}>
                   <article className="group border border-border rounded-2xl overflow-hidden bg-card hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
-                    <div
-                      className="aspect-[4/5] relative overflow-hidden"
-                      role="img"
-                      aria-label={`${p.name} placeholder`}
-                    >
-                      <div
-                        className="absolute inset-0 transition-transform duration-[1200ms] group-hover:scale-110 texture-linen"
-                        style={{
-                          background: `linear-gradient(${135 + i * 25}deg, var(--olive-deep), var(--olive) 60%, var(--olive-light))`,
-                        }}
+                    <div className="aspect-[4/5] relative overflow-hidden bg-[color:var(--cream)]">
+                      <img
+                        src={p.image}
+                        alt={`${p.name} by HH Textiles — block printed, custom manufactured in Noida, India`}
+                        loading="lazy"
+                        decoding="async"
+                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-105"
                       />
                       <div
                         aria-hidden
-                        className="absolute inset-0 opacity-30 mix-blend-overlay"
-                        style={{
-                          background:
-                            "radial-gradient(circle at 30% 30%, var(--gold), transparent 55%)",
-                        }}
+                        className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/40 to-transparent"
                       />
-                      <div className="absolute bottom-5 left-5 text-cream/85 font-display text-sm tracking-[0.3em] uppercase">
+                      <div className="absolute bottom-5 left-5 text-cream font-display text-sm tracking-[0.3em] uppercase">
                         {String(i + 1).padStart(2, "0")} · {p.name.split(" ")[0]}
                       </div>
                     </div>
@@ -595,7 +588,9 @@ function Home() {
                         {p.desc}
                       </p>
                       <a
-                        href="#contact"
+                        href={WHATSAPP_URL}
+                        target="_blank"
+                        rel="noreferrer"
                         className="mt-5 inline-flex items-center gap-1.5 text-accent text-sm font-medium group/link"
                       >
                         Learn More
