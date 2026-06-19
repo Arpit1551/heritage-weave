@@ -72,7 +72,7 @@ export function Nav() {
             onClick={() => go("#contact")}
             className="bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[color:var(--olive-deep)] transition-colors"
           >
-            Get a Quote
+            Let's Connect
           </button>
         </nav>
 
@@ -101,7 +101,7 @@ export function Nav() {
               onClick={() => go("#contact")}
               className="bg-primary text-primary-foreground px-5 py-3 rounded-full text-sm font-medium text-center"
             >
-              Get a Quote
+              Let's Conenct
             </button>
           </div>
         </div>

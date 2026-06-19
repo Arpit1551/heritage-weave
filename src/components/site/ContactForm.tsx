@@ -106,7 +106,7 @@ export function ContactForm() {
       </div>
       <button
         type="submit"
-        className="w-full bg-accent text-charcoal font-medium py-3.5 rounded-lg hover:brightness-95 transition"
+        className="w-full bg-accent text-charcoal font-medium py-3.5 rounded-lg hover:brightness-95 transition cursor-pointer"
       >
         Send Enquiry
       </button>

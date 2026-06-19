@@ -18,13 +18,6 @@ import {
 import { Nav } from "@/components/site/Nav";
 import { Reveal } from "@/components/site/Reveal";
 import { ContactForm } from "@/components/site/ContactForm";
-import product1 from "@/assets/product-1.png.asset.json";
-import product2 from "@/assets/product-2.png.asset.json";
-import product3 from "@/assets/product-3.png.asset.json";
-import product4 from "@/assets/product-4.png.asset.json";
-import product5 from "@/assets/product-5.png.asset.json";
-import product6 from "@/assets/product-6.png.asset.json";
-import product7 from "@/assets/product-7.png.asset.json";
 
 import product4_img from "@/assets/product-4.png";
 import product1_img from "@/assets/product-1.png";
@@ -307,7 +300,7 @@ const products = [
   {
     name: "Cotton Quilted Bags",
     desc: "Handcrafted quilted bags in custom sizes, prints, and designs — made with premium organic cotton.",
-    image: product4_img,
+    image: product1_img,
   },
   {
     name: "Scarves",
@@ -327,7 +320,7 @@ const products = [
   {
     name: "Tote Bags",
     desc: "Sustainable, stylish cotton tote bags with full-custom print options.",
-    image: product1_img,
+    image: product4_img,
   },
   {
     name: "Fashion Accessories",
@@ -597,7 +590,7 @@ function Home() {
                         href="#contact"
                         className="mt-5 inline-flex items-center gap-1.5 text-accent text-sm font-medium group/link"
                       >
-                        Learn More
+                        Send Enquiry 
                         <ArrowRight
                           size={14}
                           className="transition-transform group-hover/link:translate-x-1"
