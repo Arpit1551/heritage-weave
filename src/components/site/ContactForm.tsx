@@ -33,7 +33,7 @@ export function ContactForm() {
     }
     setErrors({});
     const text = `Hello HH Textiles,%0A%0AName: ${encodeURIComponent(data.name)}%0AEmail: ${encodeURIComponent(data.email)}%0ACompany: ${encodeURIComponent(data.company || "N/A")}%0AProduct Interest: ${encodeURIComponent(data.interest)}%0A%0AMessage:%0A${encodeURIComponent(data.message)}`;
-    window.open(`https://wa.me/919773828007?text=${text}`, "_blank");
+    window.location.href = `https://wa.me/919773828007?text=${text}`;
     e.currentTarget.reset();
   };
 
