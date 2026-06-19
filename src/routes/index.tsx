@@ -301,26 +301,32 @@ const products = [
   {
     name: "Cotton Quilted Bags",
     desc: "Handcrafted quilted bags in custom sizes, prints, and designs — made with premium organic cotton.",
+    image: product4.url,
   },
   {
     name: "Scarves",
     desc: "Custom scarves in silk, cotton, modal, wool, linen, viscose, and sustainable fabrics — available in all sizes and finishes.",
+    image: product7.url,
   },
   {
     name: "Dresses",
     desc: "Artisan-crafted dresses and garments with intricate prints and exceptional fabric quality.",
+    image: product5.url,
   },
   {
     name: "Pouches & Cosmetic Bags",
     desc: "Block-printed and screen-printed pouches and travel bags in any size or design.",
+    image: product3.url,
   },
   {
     name: "Tote Bags",
     desc: "Sustainable, stylish cotton tote bags with full-custom print options.",
+    image: product1.url,
   },
   {
     name: "Fashion Accessories",
     desc: "Complete textile accessories — from sarongs to fashion pieces — built to your brand vision.",
+    image: product6.url,
   },
 ];
 
