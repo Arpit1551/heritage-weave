@@ -56,7 +56,7 @@ export function Nav() {
             <button
               key={l.href}
               onClick={() => go(l.href)}
-              className={`text-sm font-medium tracking-wide transition-colors relative ${
+              className={`cursor-pointer text-sm font-medium tracking-wide transition-colors relative ${
                 active === l.href ? "text-primary" : "text-foreground/70 hover:text-primary"
               }`}
             >
@@ -70,7 +70,7 @@ export function Nav() {
           ))}
           <button
             onClick={() => go("#contact")}
-            className="bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[color:var(--olive-deep)] transition-colors"
+            className="cursor-pointer bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[color:var(--olive-deep)] transition-colors"
           >
             Let's Connect
           </button>
