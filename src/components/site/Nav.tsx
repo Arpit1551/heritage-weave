@@ -77,7 +77,7 @@ export function Nav() {
         </nav>
 
         <button
-          className="md:hidden p-2 text-foreground"
+          className="cursor-pointer md:hidden p-2 text-foreground"
           onClick={() => setOpen((v) => !v)}
           aria-label="Toggle menu"
         >
