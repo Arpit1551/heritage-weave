@@ -45,7 +45,7 @@ export function Nav() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-16 md:h-20 flex items-center justify-between">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="font-display font-bold text-xl md:text-2xl tracking-tight text-primary"
+          className="cursor-pointer font-display font-bold text-xl md:text-2xl tracking-tight text-primary"
           aria-label="HH Textiles — home"
         >
           HH<span className="text-accent">·</span>TEXTILES
@@ -56,7 +56,7 @@ export function Nav() {
             <button
               key={l.href}
               onClick={() => go(l.href)}
-              className={`text-sm font-medium tracking-wide transition-colors relative ${
+              className={`cursor-pointer text-sm font-medium tracking-wide transition-colors relative ${
                 active === l.href ? "text-primary" : "text-foreground/70 hover:text-primary"
               }`}
             >
@@ -70,14 +70,14 @@ export function Nav() {
           ))}
           <button
             onClick={() => go("#contact")}
-            className="bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[color:var(--olive-deep)] transition-colors"
+            className="cursor-pointer bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[color:var(--olive-deep)] transition-colors"
           >
             Let's Connect
           </button>
         </nav>
 
         <button
-          className="md:hidden p-2 text-foreground"
+          className="cursor-pointer md:hidden p-2 text-foreground"
           onClick={() => setOpen((v) => !v)}
           aria-label="Toggle menu"
         >

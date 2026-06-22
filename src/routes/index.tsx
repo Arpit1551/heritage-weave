@@ -576,9 +576,9 @@ function Home() {
                       />
                       <div
                         aria-hidden
-                        className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/40 to-transparent"
+                        className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-black/80 via-black/40 to-transparent"
                       />
-                      <div className="absolute bottom-5 left-5 text-cream font-display text-sm tracking-[0.3em] uppercase">
+                      <div className="absolute bottom-5 left-5 text-white font-display text-sm tracking-[0.3em] uppercase drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]">
                         {String(i + 1).padStart(2, "0")} · {p.name.split(" ")[0]}
                       </div>
                     </div>
