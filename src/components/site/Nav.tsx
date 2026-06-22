@@ -45,7 +45,7 @@ export function Nav() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-16 md:h-20 flex items-center justify-between">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="font-display font-bold text-xl md:text-2xl tracking-tight text-primary"
+          className="cursor-pointer font-display font-bold text-xl md:text-2xl tracking-tight text-primary"
           aria-label="HH Textiles — home"
         >
           HH<span className="text-accent">·</span>TEXTILES
