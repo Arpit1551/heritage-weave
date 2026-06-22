@@ -25,6 +25,7 @@ import product3_img from "@/assets/product-3.png";
 import product6_img from "@/assets/product-6.png";
 import product7_img from "@/assets/product-7.png";
 import product5_img from "@/assets/product-5.png";
+import logo from "@/assets/hht_logo.png";
 
 
 export const Route = createFileRoute("/")({
@@ -132,7 +133,7 @@ export const Route = createFileRoute("/")({
           "@type": "Organization",
           name: "HH Textiles",
           url: "https://www.hariharatextiles.com",
-          logo: "https://www.hariharatextiles.com/logo.png",
+          logo: `${logo}`,
           contactPoint: [
             {
               "@type": "ContactPoint",
